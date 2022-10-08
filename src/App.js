@@ -5,7 +5,7 @@ function App() {
   const router = createBrowserRouter([
     {
       path: '/',
-      element: <h2>Hello path</h2>
+      element: <h2>Hello test path</h2>
     }
   ]);
 

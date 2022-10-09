@@ -3,11 +3,14 @@ import { RingContext } from '../Grandpa/Grandpa';
 
 
 const FriendCousin = () => {
-    const ring = useContext(RingContext);
+    const [house, setHouse] = useContext(RingContext);
+
     return (
         <div>
             <h2>FriendCousin</h2>
-            <p><small>{ring}</small></p>
+            <p><small>{house}</small></p>
+
+            <button onClick={() => setHouse(house - 1)}>Decrease</button>
         </div>
     );
 };
